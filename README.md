@@ -1,6 +1,6 @@
 # fronkensteen-atom-repl package
 
-The fronkensteen-atom-repl plugin package allows you to execute Scheme code in a remote Fronkensteen app from within the Atom editor.
+The fronkensteen-atom-repl plugin package allows you to execute Scheme code in a remote [Fronkensteen](https://github.com/pulpgrinder/Fronkensteen) app from within the Atom editor.
 
 Usage:
 
