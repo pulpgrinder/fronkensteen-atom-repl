@@ -1,13 +1,13 @@
 'use babel';
 
-import AsbestosCigaretteAtomPlugin from '../lib/fronkensteen-atom-repl';
+import FronkensteenAtomPlugin from '../lib/fronkensteen-atom-repl';
 
 // Use the command `window:run-package-specs` (cmd-alt-ctrl-p) to run specs.
 //
 // To run a specific `it` or `describe` block add an `f` to the front (e.g. `fit`
 // or `fdescribe`). Remove the `f` to unfocus the block.
 
-describe('AsbestosCigaretteAtomPlugin', () => {
+describe('FronkensteenAtomPlugin', () => {
   let workspaceElement, activationPromise;
 
   beforeEach(() => {
@@ -32,13 +32,13 @@ describe('AsbestosCigaretteAtomPlugin', () => {
       runs(() => {
         expect(workspaceElement.querySelector('.fronkensteen-atom-repl')).toExist();
 
-        let asbestosCigaretteAtomPluginElement = workspaceElement.querySelector('.fronkensteen-atom-repl');
-        expect(asbestosCigaretteAtomPluginElement).toExist();
+        let fronkensteenAtomPluginElement = workspaceElement.querySelector('.fronkensteen-atom-repl');
+        expect(fronkensteenAtomPluginElement).toExist();
 
-        let asbestosCigaretteAtomPluginPanel = atom.workspace.panelForItem(asbestosCigaretteAtomPluginElement);
-        expect(asbestosCigaretteAtomPluginPanel.isVisible()).toBe(true);
+        let fronkensteenAtomPluginPanel = atom.workspace.panelForItem(fronkensteenAtomPluginElement);
+        expect(fronkensteenAtomPluginPanel.isVisible()).toBe(true);
         atom.commands.dispatch(workspaceElement, 'fronkensteen-atom-repl:toggle');
-        expect(asbestosCigaretteAtomPluginPanel.isVisible()).toBe(false);
+        expect(fronkensteenAtomPluginPanel.isVisible()).toBe(false);
       });
     });
 
@@ -63,10 +63,10 @@ describe('AsbestosCigaretteAtomPlugin', () => {
 
       runs(() => {
         // Now we can test for view visibility
-        let asbestosCigaretteAtomPluginElement = workspaceElement.querySelector('.fronkensteen-atom-repl');
-        expect(asbestosCigaretteAtomPluginElement).toBeVisible();
+        let fronkensteenAtomPluginElement = workspaceElement.querySelector('.fronkensteen-atom-repl');
+        expect(fronkensteenAtomPluginElement).toBeVisible();
         atom.commands.dispatch(workspaceElement, 'fronkensteen-atom-repl:toggle');
-        expect(asbestosCigaretteAtomPluginElement).not.toBeVisible();
+        expect(fronkensteenAtomPluginElement).not.toBeVisible();
       });
     });
   });
