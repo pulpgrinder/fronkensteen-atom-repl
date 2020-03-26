@@ -1,0 +1,34 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Remote evaluate",
+        "command": "fronkensteen-atom-repl:toggle"
+      },
+      {
+        "label": "Search Scheme documentation",
+        "command": "fronkensteen-atom-repl:finddoc"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "fronkensteen-atom-repl",
+          "submenu": [
+            {
+              "label": "Remote evaluate",
+              "command": "fronkensteen-atom-repl:toggle"
+            },
+            {
+              "label": "Search Scheme documentation",
+              "command": "fronkensteen-atom-repl:finddoc"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

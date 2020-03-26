@@ -1,0 +1,6 @@
+{
+  "atom-workspace": {
+    "ctrl-r": "fronkensteen-atom-repl:toggle",
+    "ctrl-d": "fronkensteen-atom-repl:finddoc"
+  }
+}

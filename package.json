@@ -1,0 +1,19 @@
+{
+  "name": "FronkensteenAtomRepl",
+  "main": "./lib/fronkensteen-atom-repl",
+  "version": "0.1.0",
+  "description": "Remote Fronkensteen REPL for the atom editor",
+  "keywords": [],
+  "activationCommands": {
+    "atom-workspace": "fronkensteen-atom-repl:toggle"
+  },
+  "repository": "https://github.com/fronkensteen-atom-repl",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+    "sha3": ">=2.x",
+    "ws": "7.2.0"
+  }
+}
